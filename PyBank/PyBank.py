@@ -7,30 +7,33 @@ import csv
 with open(r"C:\Users\david\Desktop\budget_file.csv", 'r') as budget_file:
     budget_file = csv.DictReader(budget_file)
 
+#variables
 
-   
-# make loop 
 
-#for line in budget_file:
-    #print(line)
 
+#Total Month
+
+    totalrevenue = 0
     date_list = []   
 
     for line in budget_file:
         date_list.append(line["Date"]) 
 
-    print(len(date_list))
+        print(len(date_list))
     
-#need to do .append to add to list 
+#Total Revenue
 
-    for row in budget_file:
+        totalrevenue = totalrevenue + int(line["Profit/Losses"])
 
-        total_month = len(total_month)
+        print(totalrevenue)
 
-    
-#need to convert data into dictionary
-#need to summarize months
 
- 
+
+#Greatest Increase and Decrease
+
+#Greatest Profit Increases
+
+#Greatest Loss Decrease
+
 
 
