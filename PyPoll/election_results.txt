@@ -1,0 +1,5 @@
+Election Results
+Total Votes: 3521001
+Candidates on ballot: ["O'Tooley", 'Li', 'Khan', 'Correy']
+Candidate Vote Percentage: [2.999999147969569, 13.999996023857989, 63.00001050837531, 19.999994319797125]
+Khan is the winning candidate

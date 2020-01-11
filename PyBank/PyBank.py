@@ -24,7 +24,7 @@ with open(file_to_read) as budget_file:
 
 #Total Month
 
-    totalrevenue = 0
+    totalrevenue = int(first_row[1])
     date_list = [] 
 
     for line in budget_file:
@@ -52,14 +52,14 @@ mindate = monthly_changes.index(min(monthly_changes))
 print("Total Months:  " + str(len(date_list)+ 1))
 print("Total:  " + str(totalrevenue + prev_net))
 print("Average Change:  " + str(sum(monthly_changes) / len(monthly_changes)))
-print("Greatest Increase in Profits:  " + date_list[maxdate] + str(max(monthly_changes)))
-print("Greatest Decrease in Profits:  " + date_list[mindate] + str(min(monthly_changes)))
+print("Greatest Increase in Profits:  " + date_list[maxdate] + "  " + str(max(monthly_changes)))
+print("Greatest Decrease in Profits:  " + date_list[mindate] + "  " + str(min(monthly_changes)))
 
 with open(file_to_write, "w") as txt_file:
     txt_file.write("Total Months:  " + str(len(date_list)+1)+"\n")
     txt_file.write("Total:  " + str(totalrevenue + prev_net)+ "\n")
     txt_file.write("Total:  " + str(totalrevenue + prev_net)+ "\n")
-    txt_file.write("Greatest Increase in Profits:  " + date_list[maxdate] + str(max(monthly_changes))+ "\n")
-    txt_file.write("Greatest Decrease in Profits:  " + date_list[mindate] + str(min(monthly_changes))+ "\n")
+    txt_file.write("Greatest Increase in Profits:  " + date_list[maxdate] + "  " + str(max(monthly_changes))+ "\n")
+    txt_file.write("Greatest Decrease in Profits:  " + date_list[mindate] + "  " + str(min(monthly_changes))+ "\n")
 
 
