@@ -6,7 +6,6 @@ with open(r"C:\Users\david\Desktop\Python Challenge\python-challenge\PyPoll\elec
 
 #variables
 
-    count = 1048575
     total_votes = []
     candidatelist = []
     unique_candidate = []
@@ -22,7 +21,7 @@ with open(r"C:\Users\david\Desktop\Python Challenge\python-challenge\PyPoll\elec
         unique_candidate.append(x)
         y = candidatelist.count(x)
         vote_count.append(y)
-        z = (y/count)*100
+        z = (y/len(candidatelist))*100
         vote_percent.append(z)
 
 
