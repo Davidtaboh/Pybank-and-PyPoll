@@ -1,1 +1,5 @@
-hello
+Total Months:  86
+Total:  38185793
+Total:  38185793
+Greatest Increase in Profits:  Feb-20121926159
+Greatest Decrease in Profits:  Sep-2013-2196167

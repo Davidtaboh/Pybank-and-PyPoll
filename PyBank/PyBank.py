@@ -6,7 +6,7 @@ import os
 #read file in dictionary format
 
 file_to_read = "C:/Users/david/Desktop/Python Challenge/python-challenge/PyBank/budget_file.csv"
-file_to_write = os.path.join("budget_data.txt")
+file_to_write = "C:/Users/david/Desktop/Python Challenge/python-challenge/PyBank/budget_data.txt"
 
 with open(file_to_read) as budget_file:
     budget_file = csv.reader(budget_file)
@@ -37,17 +37,17 @@ with open(file_to_read) as budget_file:
 
 maxdate = monthly_changes.index(max(monthly_changes))
 
-print(date_list[maxdate])
+#print(date_list[maxdate])
 
 mindate = monthly_changes.index(min(monthly_changes))
 
-print(date_list[mindate])
+#print(date_list[mindate])
 
-print(len(date_list)+1)
-print(totalrevenue + prev_net)
-print(sum(monthly_changes) / len(monthly_changes))
-print(max(monthly_changes))   
-print(min(monthly_changes)) 
+#print(len(date_list)+1)
+#print(totalrevenue + prev_net)
+#print(sum(monthly_changes) / len(monthly_changes))
+#print(max(monthly_changes))   
+#print(min(monthly_changes)) 
 
 print("Total Months:  " + str(len(date_list)+ 1))
 print("Total:  " + str(totalrevenue + prev_net))
@@ -56,5 +56,10 @@ print("Greatest Increase in Profits:  " + date_list[maxdate] + str(max(monthly_c
 print("Greatest Decrease in Profits:  " + date_list[mindate] + str(min(monthly_changes)))
 
 with open(file_to_write, "w") as txt_file:
-    txt_file.write("hello")
+    txt_file.write("Total Months:  " + str(len(date_list)+1)+"\n")
+    txt_file.write("Total:  " + str(totalrevenue + prev_net)+ "\n")
+    txt_file.write("Total:  " + str(totalrevenue + prev_net)+ "\n")
+    txt_file.write("Greatest Increase in Profits:  " + date_list[maxdate] + str(max(monthly_changes))+ "\n")
+    txt_file.write("Greatest Decrease in Profits:  " + date_list[mindate] + str(min(monthly_changes))+ "\n")
+
 
