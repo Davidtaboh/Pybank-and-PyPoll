@@ -5,7 +5,7 @@ import os
 
 #read file in dictionary format
 
-file_to_read = os.path.join("budget_file.csv")
+file_to_read = "C:/Users/david/Desktop/Python Challenge/python-challenge/PyBank/budget_file.csv"
 file_to_write = os.path.join("budget_data.txt")
 
 with open(file_to_read) as budget_file:
@@ -14,7 +14,7 @@ with open(file_to_read) as budget_file:
     header = next(budget_file)
 
 #variables
-    first_row = next(budget_file)
+    #first_row = next(budget_file)
     total_change_profits = 0
     greatest_increase = 0
     initial_profit = 0
