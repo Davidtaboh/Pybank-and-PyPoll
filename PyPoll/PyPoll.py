@@ -44,6 +44,8 @@ print("Vote Totals: " + str(vote_count))
 print("Candidate Vote Percentage: " + str(vote_percent))
 print(winner + " is the winning candidate")
 
+#output calculations
+
 with open(file_to_write, "w") as txt_file:
     txt_file.write("Election Results" + "\n")
     txt_file.write("Total Votes: " + str(len(total_votes)) + "\n")

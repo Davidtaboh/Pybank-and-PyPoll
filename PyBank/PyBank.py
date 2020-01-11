@@ -22,7 +22,7 @@ with open(file_to_read) as budget_file:
     prev_net = int(first_row[1])
    
 
-#Total Month
+#first few calculations
 
     totalrevenue = int(first_row[1])
     date_list = [] 
@@ -35,25 +35,21 @@ with open(file_to_read) as budget_file:
         totalrevenue =  totalrevenue + int(line[1])
 
 
-maxdate = monthly_changes.index(max(monthly_changes))
+#min and max calculations
 
-#print(date_list[maxdate])
+maxdate = monthly_changes.index(max(monthly_changes))
 
 mindate = monthly_changes.index(min(monthly_changes))
 
-#print(date_list[mindate])
-
-#print(len(date_list)+1)
-#print(totalrevenue + prev_net)
-#print(sum(monthly_changes) / len(monthly_changes))
-#print(max(monthly_changes))   
-#print(min(monthly_changes)) 
+#print statements
 
 print("Total Months:  " + str(len(date_list)+ 1))
 print("Total:  " + str(totalrevenue + prev_net))
 print("Average Change:  " + str(sum(monthly_changes) / len(monthly_changes)))
 print("Greatest Increase in Profits:  " + date_list[maxdate] + "  " + str(max(monthly_changes)))
 print("Greatest Decrease in Profits:  " + date_list[mindate] + "  " + str(min(monthly_changes)))
+
+#output statements
 
 with open(file_to_write, "w") as txt_file:
     txt_file.write("Total Months:  " + str(len(date_list)+1)+"\n")
