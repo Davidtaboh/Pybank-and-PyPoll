@@ -16,7 +16,7 @@ The voting data includes the total votes each candidate won, the percentage of v
 
 ### Installing
 
-One should be able to run the scripts by simply opening VS Code and running the scripts within the envrironment.
+One should be able to run the scripts by simply opening VS Code and running the scripts within the environment.
 
 ## License
 
