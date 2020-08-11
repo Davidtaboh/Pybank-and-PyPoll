@@ -6,13 +6,13 @@ The voting data includes the total votes each candidate won, the percentage of v
 
 ### Prerequisites
 
-Microsoft Excel
-Visual Studio Code
+*Microsoft Excel
+*Visual Studio Code
 
 ## Getting Started
 
-Download the data
-Download both Python scripts
+*Download the data
+*Download both Python scripts
 
 ### Installing
 
