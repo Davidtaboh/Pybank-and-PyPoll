@@ -9,7 +9,7 @@ The voting data includes the total votes each candidate won, the percentage of v
 * Microsoft Excel
 * Visual Studio Code
 
-## Getting Started
+### Getting Started
 
 * Download the data
 * Download both Python scripts
@@ -18,6 +18,6 @@ The voting data includes the total votes each candidate won, the percentage of v
 
 One should be able to run the scripts by simply opening VS Code and running the scripts within the environment.
 
-## License
+### License
 
 This project is licensed under the MIT License
